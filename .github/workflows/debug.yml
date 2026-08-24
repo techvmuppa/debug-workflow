@@ -13,7 +13,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Step1 -  Checkout Repo
-              run: actions/checkout@v7
+              uses: actions/checkout@v7
             - name: Step2 - seset user_1 as USERNAME
               run: |
                 echo "USERNAME=$USER_1" >> $GITHUB_ENV
